@@ -1,7 +1,7 @@
 from django.urls import path
-from posts import views
+from comments import views
 
 urlpatterns = [
-    path('comments/', views.PostList.as_view()),
-    path('comments/<int:pk>/', views.PostDetail.as_view()),
+    path('comments/', views.CommentList.as_view()),
+    path('comments/<int:pk>/', views.CommentDetail.as_view()),
 ]
