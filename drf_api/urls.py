@@ -25,7 +25,7 @@ urlpatterns = [
     path('api_auth', include('rest_framework.urls')),
     path('dj_rest_auth/logout/', logout),
     path('dj-rest-auth/', include('dj_rest_auth.urls')),
-    path('dj-rest_auth/registration/', include('dj_rest_auth.registration.urls')),
+    path('dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
     path('', include('posts.urls')),
     path('', include('profiles.urls')),
     path('', include('comments.urls')),
