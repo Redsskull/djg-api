@@ -4,6 +4,7 @@ from .models import Post
 from .serializers import PostSerializer
 from django.db.models import Count
 from django_filters.rest_framework import DjangoFilterBackend
+
 class PostList(generics.ListCreateAPIView):
     """
     List posts or create a post if logged in
